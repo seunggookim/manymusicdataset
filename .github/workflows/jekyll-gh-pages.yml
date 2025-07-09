@@ -55,12 +55,12 @@ jobs:
         with:
           path: docs/_site/
       - name: Setup Ruby
-          uses: ruby/setup-ruby@v1
-          with:
-            ruby-version: '3.3'
-            bundler-cache: true
-            cache-version: 0
-            working-directory: '${{ github.workspace }}/docs'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+          cache-version: 0
+          working-directory: '${{ github.workspace }}/docs'
 
 
   # Deployment job
